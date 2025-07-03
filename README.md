@@ -25,19 +25,12 @@ Backend de l’application **La Pince**, projet de fin de formation DWWM. Ce dé
 la-pince-back/
 ├── src/
 │   ├── database/                # Tout ce qui concerne la base de données
-│   │   ├── migrations/
-│   │   │   ├── createTables.js
-│   │   │   ├── seedData.js
-│   │   │   └── seedTables.js
-│   │   └── database-client.js   # Connexion à la BDD avec Sequelize
+|   ├── docs/                    # Documentation Swagger
 │   ├── controllers/             # Gestion des requêtes (handlers)
 │   ├── middlewares/             # Middlewares Express (auth, erreurs, etc.)
-│   │   ├── authMiddleware.js
-│   │   └── errorHandler.js
 │   ├── models/                  # Modèles Sequelize
-│   │   └── index.js             # Associations entre modèles
 │   ├── router                   # Routes API (Express Router)
-│   ├── services/                # Logique métier (ex: userService.js, chiffrement du mot de passe, registerUser(), etc)
+|   ├── schemas/                 # Schémas de validation JOI
 |   ├── utils/                   # Snippets réutilisables pour améliorer la DX et simplifier les fichiers
 │   └── app.js                   # Setup global de l'app (Express, middlewares, routes)
 ├── .env                         # Variables d'environnement (port, DB)
@@ -45,7 +38,7 @@ la-pince-back/
 ├── .gitignore
 ├── package.json
 ├── README.md
-└── server.js                 # Fichier principal qui lance l'app listen
+└── server.js                    # Fichier principal qui lance l'app listen
 ```
 ---
 
